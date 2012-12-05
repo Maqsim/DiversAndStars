@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link href="favicon.png" rel="shortcut icon" type="image/x-icon"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Topface</title>
+    </head>
+    <body>
+    </body>
+<script type="text/javascript" src="sources/Diver.class.js"></script>
+<script type="text/javascript" src="sources/Star.class.js"></script>
+<script type="text/javascript" src="sources/core.js"></script>
+<script>
+	var objects = [],
+		starsOnShip = [],
+		starsCount = 0,
+		diversCount = 0,
+		isCompressorBusy = false;
+		
+	application.init();
+	
+	config = {
+		fps: 1000 / 30, //60 fps
+		cablePosition: canvas.width - 130, //позиция троса
+		diverSpeed: 20, //px per second
+		balon: 20000, //максимальный обьем балона водолаза (мл)
+		fillingSpeed: 3000, //скорость заправки балона (мл/сек)
+		skyHeigth: Math.round(canvas.height / 6), //высота неба (1/6)
+		bottomHeight: 50, // Высота дна
+		maxStarsOnHands: 2, // максимальное кол-во звезд в руках водолаза
+	}
+</script>
+</html>
